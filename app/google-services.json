@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "426867757183",
+    "firebase_url": "https://the-ta-app.firebaseio.com",
+    "project_id": "the-ta-app",
+    "storage_bucket": "the-ta-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426867757183:android:56a5657192c8ca2e",
+        "android_client_info": {
+          "package_name": "com.thetasquad.thetaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426867757183-36s18tho0ujpk8t061cs5i9k0imd3fgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thetasquad.thetaapp",
+            "certificate_hash": "6a66e2eb7907f1c1852b73a2a3187f9c134fa67b"
+          }
+        },
+        {
+          "client_id": "426867757183-cq4hhht31v17khvu1oodhpuc3pmmtt5q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thetasquad.thetaapp",
+            "certificate_hash": "0ab6ccde7cfc946f5aaac5df112669ca0ab12c95"
+          }
+        },
+        {
+          "client_id": "426867757183-pc03qs7ubtkj3cnn2me391kjd8q0muei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thetasquad.thetaapp",
+            "certificate_hash": "0eea3031e2f41c561343717213e93b041b15c1c0"
+          }
+        },
+        {
+          "client_id": "426867757183-spdloues37t67rma2b197hgc9kjvjnaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb7jRqjEAYKRZdgdWTBstHea5QFl53Vn4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426867757183-spdloues37t67rma2b197hgc9kjvjnaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426867757183:android:2cdfc6df68183cb9",
+        "android_client_info": {
+          "package_name": "com.oneup.thetaproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "426867757183-e643dfi8o4n1mg3e1rvi9rp6cdgslnq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oneup.thetaproject",
+            "certificate_hash": "ca65d7168332c9edcae3820dd3b8c1ee336fc388"
+          }
+        },
+        {
+          "client_id": "426867757183-spdloues37t67rma2b197hgc9kjvjnaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb7jRqjEAYKRZdgdWTBstHea5QFl53Vn4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "426867757183-spdloues37t67rma2b197hgc9kjvjnaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
