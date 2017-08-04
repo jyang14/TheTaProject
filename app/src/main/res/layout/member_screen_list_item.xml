@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            percent:layout_heightPercent = "7.5%"
+            percent:layout_aspectRatio = "100%"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            percent:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/member_screen_list_item_name"
+            percent:layout_heightPercent = "3.75%"
+            android:layout_width="wrap_content"
+
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="TextView"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/member_screen_list_item_description"
+            percent:layout_heightPercent = "3.75%"
+            android:layout_width="wrap_content"
+
+            android:gravity="center"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="TextView"
+            android:textColor="@android:color/black"/>
+
+        <ImageButton
+            android:id="@+id/member_screen_list_lock_button"
+            percent:layout_heightPercent = "7.5%"
+            percent:layout_aspectRatio = "100%"
+            android:src="@drawable/unlockedlock"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/member_screen_list_item_trash_button"
+            android:layout_toStartOf="@+id/member_screen_list_item_trash_button"
+
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/member_screen_list_item_trash_button"
+            percent:layout_heightPercent = "7.5%"
+            percent:layout_aspectRatio = "100%"
+            android:src="@drawable/trashbutton5pad"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"/>
+</android.support.percent.PercentRelativeLayout>
