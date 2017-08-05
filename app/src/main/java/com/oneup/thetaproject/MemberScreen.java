@@ -9,8 +9,6 @@ import java.util.ArrayList;
 
 public class MemberScreen extends AppCompatActivity {
 
-    ArrayAdapter<String> membersAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +20,6 @@ public class MemberScreen extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.member_screen_listview);
         listView.setAdapter(adapter);
-
-
-
-
 
     }
 }
