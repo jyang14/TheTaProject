@@ -21,6 +21,15 @@ public class FragmentGroups extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_groups, container, false);
+
+        //android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) getView().findViewById(R.id.toolbarGroups);
+
+        View view = inflater.inflate(R.layout.fragment_groups, container, false);
+        //AppCompatActivity activity = (AppCompatActivity) getActivity();
+        android.support.v7.widget.Toolbar toolbarGroups = (android.support.v7.widget.Toolbar) view.findViewById(R.id.toolbarGroups);
+        //activity.setSupportActionBar(toolbarGroups);
+
+        return view;
     }
+
 }
