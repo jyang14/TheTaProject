@@ -7,24 +7,27 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.oneup.thetaproject.firebase.data.User;
+
 import java.lang.reflect.Member;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by johnta on 8/4/17.
  * Converts object to a view
  */
 
-public class MembersAdapter extends ArrayAdapter<Member> {
+public class MembersAdapter extends ArrayAdapter<User> {
 
-    public MembersAdapter (Context context, ArrayList<Member> members) {
+    public MembersAdapter (Context context, List<User> members) {
         super (context, 0, members);
     }
 
     @Override
     public View getView (int position, View convertView, ViewGroup parent) {
 
-        Member member = getItem(position);
+        User member = getItem(position);
 
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.member_screen_list_item,parent,false);

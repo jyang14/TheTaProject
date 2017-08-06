@@ -2,8 +2,9 @@ package com.oneup.thetaproject;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.oneup.thetaproject.firebase.data.User;
 
 import java.util.ArrayList;
 
@@ -14,7 +15,7 @@ public class MemberScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_screen);
 
-        ArrayList<Member> arrayOfMembers = new ArrayList<Member>();
+        ArrayList<User> arrayOfMembers = new ArrayList<>();
 
         MembersAdapter adapter = new MembersAdapter(this, arrayOfMembers);
 

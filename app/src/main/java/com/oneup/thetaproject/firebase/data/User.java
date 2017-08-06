@@ -14,6 +14,7 @@ public class User {
 
     public String name;
     public String email;
+    public String description;
 
     public List<Long> groups;
 
@@ -21,6 +22,7 @@ public class User {
         this.name = name;
         this.email = email;
         groups = new ArrayList<>();
+        description = "";
     }
 
 
