@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import com.oneup.thetaproject.firebase.data.User;
 
-import java.lang.reflect.Member;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -30,7 +28,7 @@ public class MembersAdapter extends ArrayAdapter<User> {
         User member = getItem(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.member_screen_list_item,parent,false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.fragment_member_screen_list_item,parent,false);
         }
 
         TextView memberName = (TextView) convertView.findViewById(R.id.member_screen_list_item_name);

@@ -25,7 +25,6 @@ public class User {
         description = "";
     }
 
-
     public User() {
     }
 
