@@ -30,13 +30,13 @@
         />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/member_screen_add_member"
         percent:layout_heightPercent="7.5%"
         percent:layout_aspectRatio = "100%"
-        android:layout_alignBottom="@+id/button2"
-        android:layout_alignParentEnd="true"
+        android:text="+"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:text="+" />
+        android:layout_alignParentEnd="true" />
 
     <ListView
         android:id="@+id/member_screen_listview"
