@@ -28,6 +28,14 @@ public class Database {
     private DatabaseReference groupsRef;
     private DatabaseReference usersRef;
 
+    private void updateRemote(Group group){
+        groupsRef.child(String.valueOf(group.UUID)).setValue(group);
+    }
+
+    private void updateRemote(User user){
+        usersRef.child(user.hash()).setValue(user);
+    }
+
     public Database() {
         firebaseDatabase = FirebaseDatabase.getInstance();
         groupsRef = firebaseDatabase.getReference("groups");
@@ -39,12 +47,15 @@ public class Database {
             group.members = new HashMap<>();
 
         group.members.put(member.hash(), level);
+        member.groups.add(group.UUID);
+        updateRemote(group);
+        updateRemote(member);
 
     }
 
     public Group createGroup(String name, GroupType type, String description) {
         Group group = new Group(name, type, description);
-        groupsRef.child(String.valueOf(group.UUID)).setValue(group);
+        updateRemote(group);
         return group;
     }
 
@@ -54,7 +65,7 @@ public class Database {
 
     public User createUser(FirebaseUser firebaseUser) {
         User user = new User(firebaseUser.getDisplayName(), firebaseUser.getEmail());
-        usersRef.child(user.hash()).setValue(user);
+        updateRemote(user);
         return user;
     }
 
@@ -71,7 +82,7 @@ public class Database {
     }
 
 
-    public void GetGroup(String hash, GroupHandler handler) {
+    public void getGroup(String hash, GroupHandler handler) {
         groupsRef.child(hash).addListenerForSingleValueEvent(new SingleDataGetter<>(handler, Group.class));
     }
 
