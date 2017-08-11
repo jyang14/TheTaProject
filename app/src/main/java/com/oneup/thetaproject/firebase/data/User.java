@@ -15,6 +15,7 @@ public class User {
     public String name;
     public String email;
     public String description;
+    public String photo;
 
     public List<Long> groups;
 
@@ -23,9 +24,15 @@ public class User {
         this.email = email;
         groups = new ArrayList<>();
         description = "";
+        photo = "";
     }
 
     public User() {
+        name = "";
+        email = "";
+        groups = new ArrayList<>();
+        description = "";
+        photo = "";
     }
 
     public String hash() {

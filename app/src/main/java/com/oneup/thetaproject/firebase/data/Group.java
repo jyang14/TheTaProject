@@ -20,7 +20,13 @@ public class Group {
     public List<String> events;
 
     public Group(){
+        name = "";
+        type = GroupType.CLASS;
+        description = "";
 
+        UUID = 0;
+        members = new HashMap<>();
+        events = new ArrayList<>();
     }
 
     public Group(String name, GroupType type, String description) {
